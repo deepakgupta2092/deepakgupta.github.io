@@ -11,11 +11,11 @@
 <style>
 /* ===== DESIGN TOKENS ===== */
 :root,[data-theme="light"]{
---color-bg:#f8f7f4;--color-surface:#ffffff;--color-surface-2:#f2f1ee;--color-surface-offset:#e8e6e2;
---color-divider:#dbd8d3;--color-border:#ccc9c3;
---color-text:#0f1b2d;--color-text-muted:#556070;--color-text-faint:#9aa3ae;--color-text-inverse:#f8f7f4;
---color-primary:#0f1b2d;--color-primary-hover:#1a2f4a;--color-accent:#2563a8;--color-accent-hover:#1d4f8a;
---color-accent-light:#deeaf8;
+--color-bg:#f5f7fa;--color-surface:#ffffff;--color-surface-2:#eef1f6;--color-surface-offset:#e2e8f0;
+--color-divider:#d0d8e4;--color-border:#b8c5d6;
+--color-text:#1a2d45;--color-text-muted:#4a6080;--color-text-faint:#8fa0b5;--color-text-inverse:#f8f7f4;
+--color-primary:#1a2d45;--color-primary-hover:#243d5c;--color-accent:#1a6fc4;--color-accent-hover:#155fa8;
+--color-accent-light:#dbeeff;
 --badge-review:#b45309;--badge-review-bg:#fef3c7;
 --badge-ongoing:#166534;--badge-ongoing-bg:#dcfce7;
 --badge-published:#1e40af;--badge-published-bg:#dbeafe;
@@ -38,11 +38,11 @@
 --content-narrow:640px;--content-default:960px;--content-wide:1160px;
 }
 [data-theme="dark"]{
---color-bg:#0d1520;--color-surface:#111d2e;--color-surface-2:#162236;--color-surface-offset:#1c2b40;
---color-divider:#1f3048;--color-border:#243650;
---color-text:#e2e8f0;--color-text-muted:#8fa3ba;--color-text-faint:#4a6070;--color-text-inverse:#0d1520;
---color-primary:#e2e8f0;--color-primary-hover:#f0f5fb;--color-accent:#60a5e8;--color-accent-hover:#82bbf0;
---color-accent-light:#162845;
+--color-bg:#0e1929;--color-surface:#152135;--color-surface-2:#1a283e;--color-surface-offset:#1f304a;
+--color-divider:#243758;--color-border:#2d4568;
+--color-text:#e8eef5;--color-text-muted:#8fa3ba;--color-text-faint:#4a6070;--color-text-inverse:#0d1520;
+--color-primary:#e2e8f0;--color-primary-hover:#f0f5fb;--color-accent:#5baef5;--color-accent-hover:#7cc3f8;
+--color-accent-light:#162e50;
 --badge-review:#d97706;--badge-review-bg:#2d1f08;
 --badge-ongoing:#22c55e;--badge-ongoing-bg:#0a2118;
 --badge-published:#60a5e8;--badge-published-bg:#0e1e35;
@@ -50,10 +50,10 @@
 --shadow-sm:0 1px 3px #000/0.3;--shadow-md:0 4px 14px #000/0.4;--shadow-lg:0 12px 36px #000/0.5;
 }
 @media(prefers-color-scheme:dark){:root:not([data-theme]){
---color-bg:#0d1520;--color-surface:#111d2e;--color-surface-2:#162236;--color-surface-offset:#1c2b40;
---color-divider:#1f3048;--color-border:#243650;
---color-text:#e2e8f0;--color-text-muted:#8fa3ba;--color-text-faint:#4a6070;--color-text-inverse:#0d1520;
---color-accent:#60a5e8;--color-accent-hover:#82bbf0;--color-accent-light:#162845;
+--color-bg:#0e1929;--color-surface:#152135;--color-surface-2:#1a283e;--color-surface-offset:#1f304a;
+--color-divider:#243758;--color-border:#2d4568;
+--color-text:#e8eef5;--color-text-muted:#8fa3ba;--color-text-faint:#4a6070;--color-text-inverse:#0d1520;
+--color-accent:#5baef5;--color-accent-hover:#7cc3f8;--color-accent-light:#162e50;
 --badge-review:#d97706;--badge-review-bg:#2d1f08;
 --badge-ongoing:#22c55e;--badge-ongoing-bg:#0a2118;
 --badge-published:#60a5e8;--badge-published-bg:#0e1e35;
@@ -618,23 +618,25 @@ footer{background:var(--color-surface);border-top:1px solid var(--color-divider)
         </div>
       </article>
 
-      <article class="pub-item" data-type="revision" data-text="systems integration high-throughput biofabrication therapeutics singh moses gupta kim pal bioactive materials revision">
-        <div class="pub-title">Traversing New Frontiers through Systems Integration in High-throughput Platforms for Advanced Biofabrication and Therapeutics</div>
-        <div class="pub-authors">Yogendra Singh*, Joseph Moses*, <strong>Deepak Gupta</strong>, Myoung Kim, Vaibhav Pal</div>
+      <article class="pub-item" data-type="journal" data-text="three-tier framework high-throughput biofabrication 3D bioprinting assistive platforms translational singh moses kim gupta pal deniz gerhard ozbolat bioactive materials 2025">
+        <div class="pub-title"><a href="https://doi.org/10.1016/j.bioactmat.2025.11.024" target="_blank" rel="noopener noreferrer">Three-tier framework for high-throughput biofabrication: Integrating 3D bioprinting, assistive platforms, and translational opportunities</a></div>
+        <div class="pub-authors">Yogendra Singh, Joseph Moses, Myoung Kim, <strong>Deepak Gupta</strong>, Vaibhav Pal, Irem Deniz, Ethan Gerhard, Ibrahim Ozbolat</div>
         <div class="pub-meta">
           <span class="pub-journal">Bioactive Materials</span>
           <span class="pub-if">IF 20.3</span>
-          <span class="pub-badge badge-revision">Revision Submitted</span>
+          <span class="pub-badge badge-published">Published</span>
         </div>
         <div class="bibtex-toggle">
           <button class="bibtex-btn" onclick="toggleBibtex(this)" aria-expanded="false"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>BibTeX</button>
           <div class="bibtex-block"><button class="copy-btn" onclick="copyBibtex(this)">Copy</button>
-            <pre>@article{singh2025systems,
-  title={Traversing New Frontiers through Systems Integration in High-throughput Platforms for Advanced Biofabrication},
-  author={Singh, Yogendra and Moses, Joseph and Gupta, Deepak and Kim, Myoung and Pal, Vaibhav},
+            <pre>@article{singh2025threetier,
+  title={Three-tier framework for high-throughput biofabrication: Integrating 3D bioprinting, assistive platforms, and translational opportunities},
+  author={Singh, Yogendra and Moses, Joseph and Kim, Myoung and Gupta, Deepak and Pal, Vaibhav and Deniz, Irem and Gerhard, Ethan and Ozbolat, Ibrahim},
   journal={Bioactive Materials},
+  volume={57},
+  pages={726--753},
   year={2025},
-  note={Revision submitted}
+  doi={10.1016/j.bioactmat.2025.11.024}
 }</pre></div>
         </div>
       </article>
